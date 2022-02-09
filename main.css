@@ -2,56 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.heading {
-    animation: uptodown 500ms ease-in;
-}
+.heading {animation: uptodown 500ms ease-in;}
+.img-animate {animation: scale 500ms ease-in 520ms;}
+.para-animate {animation: para 500ms ease-in 520ms;}
+.para-animate-2 {animation: para-2 500ms ease-in 520ms;}
 
 @keyframes uptodown {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.img-animate {
-    animation: scale 500ms ease-in calc(500ms + 20ms);
-}
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0);}}
 
 @keyframes scale {
-    0% {
-        transform: scale(0.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-.para-animate {
-    animation: para 500ms ease-in calc(500ms + 20ms);
-}
+    0% {transform: scale(0.5);}
+    100% {transform: scale(1);}}
 
 @keyframes para {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-.para-animate-2 {
-    animation: para-2 500ms ease-in calc(500ms + 20ms);
-}
+    0% {transform: translateX(100%);}
+    100% {transform: translateY(0);}}
 
 @keyframes para-2 {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
+    0% {transform: translateX(-100%);}
+    100% {transform: translateY(0);}}
