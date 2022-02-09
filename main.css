@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heading-1 {
+    animation: uptodown 500ms ease-in;
+}
+
+@keyframes uptodown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.img-animate {
+    animation: scale 500ms ease-in calc(500ms + 20ms);
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.para-animate {
+    animation: para 500ms ease-in calc(500ms + 20ms);
+}
+
+@keyframes para {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.para-animate-2 {
+    animation: para-2 500ms ease-in calc(500ms + 20ms);
+}
+
+@keyframes para-2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
