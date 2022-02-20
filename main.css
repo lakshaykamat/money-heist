@@ -13,7 +13,7 @@
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-.dropdown:focus .dropdown-menu {
+.dropdown:active .dropdown-menu {
   opacity: 1;
 }
 
